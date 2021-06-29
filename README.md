@@ -1,1 +1,1 @@
-# A Website Portfolio Showcasing Shane Web Development Projects.
+# A Website Portfolio
