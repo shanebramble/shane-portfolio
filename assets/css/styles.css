@@ -1,3 +1,10 @@
+:root {
+    --main-color:#DEEDF0;
+    --secondary-color: #B2B8A3;
+    --tertiary-color: #BBDAE0;
+    --flex-item-color: #FFF5EB;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,13 +12,17 @@
 }
 
 body {
-    background-color: #eeeef7;
+    background-color: var(--main-color);
     opacity: 1;
     line-height: 1.5;
 }
 
+h2 {
+    color: var(--secondary-color);
+}
+
 header {
-    background-color: rgba(49, 52, 61, 1);
+    background-color: var(--tertiary-color);
     box-shadow: 0 5px 35px rgba(146, 204, 206, 0.4);
     display: flex;
     flex: wrap;
@@ -25,8 +36,8 @@ header {
 
 header h1 {
     padding: 10px;
-    color: rgba(49, 52, 61, 1);
-    background-color: rgba(146, 204, 206, 1);
+    color: #31343D;
+    background-color: var(--secondary-color);
     margin: 0;
     font-size: 3vw;
     line-height: 1;
@@ -48,7 +59,7 @@ nav ul {
 nav ul li a {
     padding: 5px 10px;
     text-decoration: none;
-    color: rgba(146, 204, 206, 1);
+    color: var(--secondary-color);
     font-size: 1.4rem;
     margin-right: 10px;
 }
@@ -59,8 +70,10 @@ nav a:hover {
 }
 
 .hero {
-    background-image: linear-gradient(180deg, rgba(146, 204, 206, 0.5), rgba(49, 52, 61, 1)),
-        url("../images/02-hero-bg.jpg");
+    background-image: linear-gradient(180deg,
+            rgba(146, 204, 206, 0.5),
+            rgba(49, 52, 61, 1)),
+        url("../images/business.jpg");
     height: 250px;
     display: flex;
     background-size: cover;
@@ -70,7 +83,7 @@ nav a:hover {
 .hero h2 {
     display: inline-block;
     position: absolute;
-    color: rgba(146, 204, 206, 1);
+    color: var(--secondary-color);
     font-size: 45px;
     bottom: 40px;
     right: 50px;
@@ -103,7 +116,6 @@ nav a:hover {
     margin: 10px 11px;
     height: 370px;
     width: 300px;
-
 }
 
 .folio-section>div {
@@ -145,7 +157,7 @@ nav a:hover {
 }
 
 .flex-item {
-    border: 5px solid rgba(146, 204, 206, 1);
+    border: 5px solid var(--flex-item-color);
     border-radius: 15px;
     background-color: rgba(68, 88, 119, 1);
     color: rgba(49, 52, 61, 1);
@@ -156,7 +168,6 @@ nav a:hover {
     align-items: flex-end;
     margin: 8px;
     text-decoration: none;
-
 }
 
 .flex-item:first-child {
@@ -213,7 +224,7 @@ nav a:hover {
 }
 
 footer {
-    background-color: rgba(49, 52, 61, 1);
+    background-color: var(--tertiary-color);
     box-shadow: 0 5px 35px rgba(146, 204, 206, 0.4);
     height: 100px;
     width: 100%;
@@ -223,7 +234,21 @@ footer {
     flex-wrap: wrap;
 }
 
-@media screen and (max-width:980) {
+footer div {
+    color: white;
+}
+
+footer h2 {
+    color: white;
+}
+
+footer div a {
+    color: rgb(79, 185, 228);
+    float: right;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 980) {
     header {
         padding: 0 0 10px 0;
         justify-content: center;
@@ -254,7 +279,6 @@ footer {
         text-align: left;
         font-size: 7vw;
     }
-
 }
 
 @media screen and (max-width: 768px) {
