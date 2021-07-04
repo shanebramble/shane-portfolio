@@ -18,6 +18,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15px 6% 15px 0;
+    position: sticky;
+    top: 0;
     z-index: 99999;
 }
 
@@ -45,10 +47,15 @@ nav ul {
 
 nav ul li a {
     padding: 5px 10px;
-    text-decoration: underline solid #B8DFD8 5px;
+    text-decoration: none;
     color: rgba(146, 204, 206, 1);
     font-size: 1.4rem;
     margin-right: 10px;
+}
+
+nav a:hover {
+    background-color: black;
+    border-radius: 15px;
 }
 
 .hero {
@@ -82,7 +89,8 @@ nav ul li a {
     justify-content: space-between;
     align-items: stretch;
 }
-.folio-section > h2 {
+
+.folio-section>h2 {
     flex: 0 0 20%;
     text-align: right;
     border-right: 4px solid rgba(49, 52, 61, 1);
@@ -91,24 +99,54 @@ nav ul li a {
     line-height: 1.1;
 }
 
-.folio-section > div {
+.folio-section div img {
+    margin: 10px 11px;
+    height: 370px;
+    width: 300px;
+
+}
+
+.folio-section>div {
     flex: 0 0 80%;
 }
 
 .folio-section p {
     margin-bottom: 20px;
-    padding-left: 40px;
+    padding-left: 11px;
 }
 
-.work-container
+/* .para-one
 {
+    float:right; 
+} */
+
+.photo-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.quick-bio {
+    margin-top: 4px;
+}
+
+.photo-container span {
+    font-weight: bold;
+}
+
+.quote {
+    font-style: italic !important;
+    color: grey;
+}
+
+.work-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.flex-item
-{
+
+.flex-item {
     border: 5px solid rgba(146, 204, 206, 1);
+    border-radius: 15px;
     background-color: rgba(68, 88, 119, 1);
     color: rgba(49, 52, 61, 1);
     min-height: 150px;
@@ -118,32 +156,125 @@ nav ul li a {
     align-items: flex-end;
     margin: 8px;
     text-decoration: none;
-    
+
 }
-.flex-item:first-child
-{
+
+.flex-item:first-child {
     height: 400px;
     flex-basis: 100%;
 }
+
 .flex-item div {
-    background-color:rgba(146, 204, 206, 1);
+    background-color: rgba(146, 204, 206, 1);
     padding: 8px 10px;
     margin-top: 70px;
     margin-bottom: 10px;
 }
-.contact-style div ul
-{
-    display: flex;                       
+
+.contact-style div ul {
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: center;
     height: 100%;
     width: 100%;
     list-style: none;
-}   
-.contact-style a 
-{
+}
+
+.contact-style a {
     color: rgba(49, 52, 61, 1);
     text-decoration: underline;
     font-weight: bold;
+}
+
+.smac {
+    background-image: url("../images/s-m-a-c-netlify-app-1920x1080desktop-f3306b.png");
+    background-size: cover;
+}
+
+.run-buddy {
+    background-image: url("../images/02-run-buddy.jpg");
+    background-size: cover;
+}
+
+.market-agency {
+    background-image: url("../images/market.png");
+    background-size: cover;
+}
+
+.personal-site {
+    background-image: url("../images/css-mysite-netlify-app-1920x1080desktop-bbc2cf.png");
+    background-size: cover;
+}
+
+.tinder-dog {
+    background-image: url("../images/tinderdog101-netlify-app-1920x1080desktop-782c98.png");
+    background-size: cover;
+}
+
+footer {
+    background-color: rgba(49, 52, 61, 1);
+    box-shadow: 0 5px 35px rgba(146, 204, 206, 0.4);
+    height: 100px;
+    width: 100%;
+    padding: 40px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width:980) {
+    header {
+        padding: 0 0 10px 0;
+        justify-content: center;
+        text-align: center;
+    }
+
+    header h1 {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+        font-size: 10vw;
+    }
+
+    header nav {
+        justify-content: center;
+    }
+
+    .folio-section>h2,
+    .folio-section>div {
+        flex: 0 0 100%;
+    }
+
+    .folio-section>h2 {
+        border-right: none;
+        border-bottom: 4px solid var(--primary);
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        text-align: left;
+        font-size: 7vw;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .flex-item,
+    .flex-item:first-child {
+        flex-basis: 100%;
+    }
+
+    .flex-item:first-child {
+        min-height: 150px;
+    }
+
+    .hero-banner {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .contact-style div {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
