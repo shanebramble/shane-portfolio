@@ -222,6 +222,10 @@ nav a:hover {
     background-image: url("../images/tinderdog101-netlify-app-1920x1080desktop-782c98.png");
     background-size: cover;
 }
+.recipe-renegade {
+    background-image: url("../images/recipe-profile.png");
+    background-size: cover;
+}
 
 footer {
     background-color: var(--tertiary-color);
