@@ -226,6 +226,10 @@ nav a:hover {
     background-image: url("../images/recipe-profile.png");
     background-size: cover;
 }
+.amazon-discount {
+    background-image: url("../images/amazon-discount-profile.png");
+    background-size: cover;
+}
 
 footer {
     background-color: var(--tertiary-color);
