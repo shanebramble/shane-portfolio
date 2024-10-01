@@ -205,6 +205,10 @@ nav a:hover {
   background-size: cover;
 }
 
+.hoop-dreams {
+  background-image: url("../images/Screenshot\ 2024-09-05\ 185057.jpg");
+  background-size: cover;
+}
 .git-it-done {
   background-image: url("../images/git-it-done-profile.jpg");
   background-size: cover;
