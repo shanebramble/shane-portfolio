@@ -200,6 +200,10 @@ nav a:hover {
   font-weight: bold;
 }
 
+.tech-blog{
+  background-image: url("../images/tech-blog-profile-pic.jpg");
+  background-size: cover;
+}
 .just-tech-news {
   background-image: url("../images/just-tech-news.jpg");
   background-size: cover;
